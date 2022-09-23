@@ -1,15 +1,29 @@
 {
-  "name": "app",
+  "name": "hkfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix server ",
+    "client": "npm run start --prefix client",
+    "conc": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy": "npm run build --prefix client && npm start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermkan/hkfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1"
+  "bugs": {
+    "url": "https://github.com/hermkan/hkfolio/issues"
+  },
+  "homepage": "https://github.com/hermkan/hkfolio#readme",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
   }
 }
