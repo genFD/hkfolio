@@ -1,13 +1,190 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------- */
+/* Reset starts             */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+/* set up smooth-scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* set up the body */
+body {
+  background-color: #121c30;
+  min-height: 100vh;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Baloo 2", League Spartan, sans-serif;
+  transition: colors ease-in-out 0.5s;
+  color: #fff;
+}
+/* ------------------- */
+/* interactive elements */
+/* ------------------- */
+.primary-btn {
+  transition: 0.3s ease-in-out background;
+}
+.primary-btn:hover * {
+  stroke: #fafafa;
+}
+
+/* ------------------- */
+/* Header */
+/* ------------------- */
+
+.social-icons li a :hover {
+  fill: #5fb4a2;
+  /* scale: 1.2; */
+}
+
+/* ------------------- */
+/* Hero */
+/* ------------------- */
+
+.heading {
+  max-width: 277px;
+}
+
+/* ------------------- */
+/* About */
+/* ------------------- */
+
+.about-description {
+  max-width: 500px;
+}
+@media (min-width: 1024px) {
+  .about-description {
+    max-width: 720px;
+  }
+}
+
+/* ------------------- */
+/* Footer */
+/* ------------------- */
+
+.heading-footer {
+  max-width: 277px;
+}
+@media (min-width: 768px) {
+  .heading-footer {
+    max-width: 390px;
+  }
+}
+
+/* ------------------- */
+/* portfolio  */
+/* ------------------- */
+
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  display: grid;
+  column-gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
+}
+.card {
+  margin-bottom: 3rem;
+}
+
+.card-header {
+  height: 20px;
+  width: 100%;
+  background-color: rgb(227, 224, 247);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 0.5rem;
+}
+.card-header span {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+}
+.card-info {
+  padding: 1rem;
+}
+.form {
+  width: 90vw;
+  max-width: 689px;
+  margin: 3rem auto;
+}
+.form-row {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  background: rgb(227, 224, 247);
+  color: #33323d;
+}
+.form-textarea {
+  height: 6rem;
+}
+::placeholder {
+  font-family: inherit;
+  color: #33323d;
+}
+.form-alert {
+  color: #f43030;
+  display: none;
+}
+
+input:invalid[focusname="true"] ~ small {
+  display: block;
+}
+input:invalid[focusname="true"] {
+  border: 1px solid #f43030;
+}
+input:invalid[focusemail="true"] ~ small {
+  display: block;
+}
+input:invalid[focusemail="true"] {
+  border: 1px solid #f43030;
+}
+textarea:invalid[focusmessage="true"] ~ small {
+  display: block;
+}
+textarea:invalid[focusmessage="true"] {
+  border: 1px solid #f43030;
+}
+/* .closing-text-container {
+  margin: 3rem auto;
+} */
+.closing-text {
+  max-width: 60rem;
+}
+@media (min-width: 1024px) {
+  .form {
+    margin: 0rem;
+  }
 }
