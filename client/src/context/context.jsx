@@ -3,7 +3,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [menu, setMenu] = useState(false);
-  const [logo, setLogo] = useState(true);
+  const [logo, setLogo] = useState(false);
   const showMenu = () => {
     setMenu(true);
   };

@@ -5,8 +5,8 @@ import { LogoV } from "../components";
 const Footernav = () => {
   return (
     <div
-      className="bg-dark-blue flex flex-col gap-y-10   justify-center items-center mt-20 h-80 tablet:flex-row tablet:justify-between tablet:h-20 tablet:gap-x-6 tablet:px-10
-      laptop:px-40 bg-203A4C"
+      className="bg-dark-blue flex flex-col gap-y-10 h-32 justify-center items-center mt-20 tablet:flex-row tablet:justify-between tablet:h-20 tablet:gap-x-6 tablet:px-10
+      laptop:px-40 bg-203A4C min-w-[480px]"
     >
       {/* <div className="flex flex-col gap-y-10 items-center tablet:flex-row tablet:justify-between tablet:pt-0 tablet:w-96 ">
         built by

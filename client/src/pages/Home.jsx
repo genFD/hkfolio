@@ -1,17 +1,16 @@
 import { About, Divider, MainFooter, Hero } from "../components";
 function Home() {
   return (
-    <>
-      <div className="mt-6 h-[80vh]">
-        {/* <Header /> */}
+    <div>
+      <div className="mt-6">
         <Hero />
         <Divider />
       </div>
-      <div className="h-[80vh]">
+      <div className="mt-6">
         <About />
         <MainFooter />
       </div>
-    </>
+    </div>
   );
 }
 

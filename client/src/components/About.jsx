@@ -3,10 +3,13 @@ import { Title } from "../components";
 
 const About = () => {
   return (
-    <section id="about" className="about-me px-8 tablet:px-10 laptop:px-48">
+    <section
+      id="about"
+      className="about-me px-8 tablet:px-10 laptop:px-48 min-w-[470px]"
+    >
       <Title>About me</Title>
       <div className="mt-7 laptop:mt-10">
-        <p className=" text-body-1 about-description font-IBM">
+        <p className="text-body-1 about-description font-IBM">
           I’m a full-stack developper looking for a new role in an exciting
           company. When writing JavaScript code, I mostly use React, but I can
           adapt to whatever tools are required. I’m based in Montreal, Canada,

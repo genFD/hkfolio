@@ -1,15 +1,37 @@
-import { Logo, Menu, LogoV } from "../components";
+import { Logo, Menu, LogoV, LogoM } from "../components";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context/context";
 
 const Header = () => {
   const { showMenu, hideMenu, menu, logo } = useGlobalContext();
-  console.log(logo);
+  // console.log(logo);
   return (
-    <header className="pr-8 pt-8 tablet:px-10 tablet:pt-16 laptop:px-40 font-IBM w-full">
-      <nav className="w-full h-8 flex justify-between items-center">
-        {logo ? <Logo /> : <LogoV />}
-        {menu ? (
+    <header className="font-IBM w-full min-w-[440px]">
+      <nav className="flex flex-col items-center -mt-32 laptop:flex-row laptop:justify-between">
+        <Logo />
+        <ul className="flex justify-center -mt-28 gap-x-8 ml-6 laptop:ml-0 laptop:mr-32 laptop:mt-1 laptop:justify-end border px-6 py-6 border-dashed">
+          <Link to="/">
+            <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
+              Home
+            </li>
+          </Link>
+          <Link to="/projects">
+            <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
+              Projects
+            </li>
+          </Link>
+          <Link to="/contact">
+            <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
+              Contact me
+            </li>
+          </Link>
+        </ul>
+      </nav>
+
+      {/* <nav className="w-full h-8 flex flex-col tablet: justify-center items-center "> */}
+      {/* {logo ? <Logo /> : <LogoV />} */}
+      {/* <Logo /> */}
+      {/* {menu ? (
           <button
             onClick={hideMenu}
             className="menu-btn cursor-pointer tablet:hidden"
@@ -40,27 +62,27 @@ const Header = () => {
               />
             </svg>
           </button>
-        )}
+        )} */}
 
-        <ul className="hidden tablet:flex tablet:gap-x-10">
-          <Link to="/">
-            <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
-              Home
-            </li>
-          </Link>
-          <Link to="/projects">
-            <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
-              Projects
-            </li>
-          </Link>
-          <Link to="/contact">
-            <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
-              Contact me
-            </li>
-          </Link>
-        </ul>
-      </nav>
-      {menu && <Menu />}
+      {/* <ul className="flex items-center justify-center border tablet:gap-x-10 -mt-24 gap-x-8">
+        <Link to="/">
+          <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
+            Home
+          </li>
+        </Link>
+        <Link to="/projects">
+          <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
+            Projects
+          </li>
+        </Link>
+        <Link to="/contact">
+          <li className="text-body-3 hover:text-00aecb cursor-pointer hover:underline">
+            Contact me
+          </li>
+        </Link>
+      </ul> */}
+      {/* </nav> */}
+      {/* {menu && <Menu />} */}
     </header>
     // <header className="px-8 absolute flex justify-between w-full">
     //   <Logo />

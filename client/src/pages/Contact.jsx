@@ -4,7 +4,7 @@ function Contact({ children }) {
     <>
       <section
         id="about"
-        className="about-me px-8 tablet:px-10 laptop:px-48 mt-20"
+        className="about-me mt-20 px-8 tablet:px-10 laptop:px-48 laptop:-mt-20 min-w-[470px]"
       >
         <Title>Get in touch</Title>
         <div className="mt-7 laptop:mt-10">

@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import LogoV from "./LogoV";
+import LogoM from "./LogoM";
 import Button from "./Button";
 import Divider from "./Divider";
 import Title from "./Title";
@@ -22,6 +23,7 @@ export {
   Header,
   Hero,
   Logo,
+  LogoM,
   Menu,
   Button,
   Divider,
