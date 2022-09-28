@@ -62,7 +62,7 @@ const ContactForm = () => {
     setFormData(updatedFormData);
   };
   return (
-    <div className="tablet:px-10 laptop:px-48 mt-10 font-IBM py-10 min-w-[420px]">
+    <div className="px-8 tablet:px-10 laptop:px-48 mt-10 font-IBM py-10 min-w-[470px]">
       <form
         action="https://formspree.io/f/mbjwbvyo"
         method="POST"

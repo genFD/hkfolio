@@ -1,7 +1,7 @@
 import { Button } from "../components";
 const Hero = () => {
   return (
-    <section className="hero mt-24 px-8 tablet:px-10 laptop:px-48 relative">
+    <section className="hero mt-24 px-8 tablet:px-10 laptop:-mt-10 laptop:px-48 relative">
       <div className="flex">
         <div className="w-5 flex flex-col items-center h-[370px]">
           <div className="w-[1px] h-[60%] flex-grow flex-shrink basis-[0%] border-l border-dashed border-FFFF"></div>

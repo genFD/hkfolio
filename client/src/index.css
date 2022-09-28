@@ -73,7 +73,7 @@ body {
 /* ------------------- */
 
 .about-description {
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 @media (min-width: 1024px) {
   .about-description {
@@ -130,7 +130,8 @@ body {
 .form {
   width: 90vw;
   max-width: 689px;
-  margin: 3rem auto;
+  /* margin: 3rem auto; */
+  /* border: 1px solid #f43030; */
 }
 .form-row {
   margin-bottom: 1.5rem;
