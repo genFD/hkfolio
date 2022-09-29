@@ -189,3 +189,24 @@ textarea:invalid[focusmessage="true"] {
     margin: 0rem;
   }
 }
+ul li::before {
+  content: attr(data-icon);
+  margin-right: 1rem;
+  /* Make slightly larger than the li font-size
+  but smaller than the li gap */
+  /* font-size: 1.25em; */
+}
+/* li {
+  display: grid;
+  grid-template-columns: 0 1fr;
+  gap: 0.75em;
+  align-items: start;
+  font-size: 0.5rem;
+  line-height: 1.25;
+} */
+/* .social-icons li a:hover {
+  transform: scale(1.2);
+} */
+.social-icons li a {
+  display: inline-block;
+}

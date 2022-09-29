@@ -13,8 +13,16 @@ import Footernav from "./Footernav";
 import MainFooter from "./MainFooter";
 import ContactForm from "./ContactForm";
 import Submitting from "./Submitting";
+import Express from "../components/icons/Express";
+import Node from "../components/icons/Node";
+import ReactIcon from "../components/icons/ReactIcon";
+import Pg from "../components/icons/Pg";
 export {
   About,
+  Express,
+  Node,
+  Pg,
+  ReactIcon,
   Submitting,
   ContactForm,
   Title,
