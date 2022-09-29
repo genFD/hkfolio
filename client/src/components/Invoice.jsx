@@ -31,7 +31,7 @@ const Invoice = () => {
           The challenge was to build out this invoicing application with these
           requirements :
         </p>
-        <ul className="bg-203A4C p-3 mt-4 gap-2 flex flex-col">
+        <ul className="bg-203A4C p-3 mt-4 gap-y-6 flex flex-col">
           <li data-icon="🔥">
             "View the optimal layout for the app depending on their device's
             screen size"
@@ -44,7 +44,7 @@ const Invoice = () => {
             Save draft invoices, and mark pending invoices as paid
           </li>
           <li data-icon="🔥">Filter invoices by status (draft/pending/paid)</li>
-          <li>Toggle light and dark mode</li>
+          <li data-icon="🔥">Toggle light and dark mode</li>
           <li data-icon="🔥">Build this project as a full-stack application</li>
         </ul>
         <div className="flex justify-between px-2 tablet:px-0 ">

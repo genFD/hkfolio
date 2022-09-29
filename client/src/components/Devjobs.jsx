@@ -32,7 +32,7 @@ const Devjobs = () => {
           The challenge was to build out this invoicing application with these
           requirements :
         </p>
-        <ul className="bg-203A4C p-3 mt-4 gap-2 flex flex-col">
+        <ul className="bg-203A4C p-3 mt-4 gap-y-6 flex flex-col">
           <li data-icon="🔥">
             Be able to filter jobs on the index page by title, location, and
             whether a job is for a full-time position
