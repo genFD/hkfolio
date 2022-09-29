@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Contact, Project, Projects } from "./pages";
+import { Home, Contact, Projects } from "./pages";
 import { Header } from "./components";
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:id" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

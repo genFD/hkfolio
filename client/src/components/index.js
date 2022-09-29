@@ -9,6 +9,7 @@ import LogoM from "./LogoM";
 import Button from "./Button";
 import Divider from "./Divider";
 import Title from "./Title";
+import Invoice from "./Invoice";
 import Footernav from "./Footernav";
 import MainFooter from "./MainFooter";
 import ContactForm from "./ContactForm";
@@ -17,9 +18,12 @@ import Express from "../components/icons/Express";
 import Node from "../components/icons/Node";
 import ReactIcon from "../components/icons/ReactIcon";
 import Pg from "../components/icons/Pg";
+import Devjobs from "./Devjobs";
 export {
   About,
   Express,
+  Devjobs,
+  Invoice,
   Node,
   Pg,
   ReactIcon,

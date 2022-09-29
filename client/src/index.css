@@ -112,7 +112,7 @@ body {
 .card-header {
   height: 20px;
   width: 100%;
-  background-color: rgb(227, 224, 247);
+  background-color: #343b4a;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -209,4 +209,13 @@ ul li::before {
 } */
 .social-icons li a {
   display: inline-block;
+}
+.projects-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footernav {
+  margin-top: auto;
 }

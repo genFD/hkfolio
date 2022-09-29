@@ -4,7 +4,6 @@ function Home() {
     <div>
       <div className="mt-6">
         <Hero />
-
         <Divider />
       </div>
       <div className="mt-6">
