@@ -8,7 +8,7 @@ const Footernav = () => {
     >
       <div className="flex flex-col gap-y-10 items-center tablet:flex-row tablet:justify-between tablet:pt-0 tablet:w-96 ">
         <p className="font-IBM ">
-          &copy; {new Date().getFullYear()}, Le Dev | Software development
+          &copy; {new Date().getFullYear()}, Hk_folio | Software development
         </p>
       </div>
 

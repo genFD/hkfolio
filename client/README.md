@@ -1,23 +1,57 @@
-# Getting Started with Create React App
+# Notes for Interview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mental Model : think of interview like a first date
 
-## Available Scripts
+## Initial call
 
-In the project directory, you can run:
+### Questions for Candidate
+- I apprecitate you take time out of your day to interview
+1. What do you do in your currently?
+2. What are some of the projects you've worked on recently?
+3. What are you looking for in your next role?
 
-### `npm start`
+- I want to work with people that are smarter than me so I can learn from them
+- I want to solve challenging projects
+- I'm tired of the finance space so I want to move into
+- I'm really pationate and enthusiastic but I don't think I can learn anymore in my current role.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Why do you want to work for ?
+
+- Go to their website, look at what they do and and understand the type of projects they have
+
+5. What's your availability for next step?
+
+### Questions for Interviewer
+
+1. How many steps are in the interview process? How long does it generally take?
+   2.How big is your engineering team?
+2. Which team would I be interviewing for?
+3. What is the culture like?
+4. Who are you competitors?
+5. What sort of projects would I work on?
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Prescreen (does this person feel confident in their JS Knowledge)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. What is the difference between const, let, and var?
+ - Const.
+  - You can't point a const to a different pointer, Immutable. But you can modify that, you add properties to an object or items to an array
+ - Let
+  - You can change the pointer but it's only going to be scoped to the closure
+
+ - Var
+  - is hoisted to the top, meaning that const and let, if you trying to access them before they going to throw a reference error, var will just throw udefined
+
+- Explain prototypical inheritance
+- What is 'this' mean in JavaScript?
+- What is the data structure of the DOM?
+- What is a Stack and a Queue? How would you create those data structures in JavaScript?
+- How can you tell if an image element is loaded on a page?
+- What is call() and apply()?
+- What is event delegation and what are the performance tradeoffs?
+- What is a Worker? When would you use one?
 
 ### `npm run build`
 
